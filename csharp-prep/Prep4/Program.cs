@@ -8,6 +8,7 @@ class Program
         int number;
 
         Console.Write("Enter a series of numbers (enter 0 to stop):");
+        
 
        
     }
