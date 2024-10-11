@@ -1,24 +1,21 @@
-// The name is a string, but the Address is a class.
-// The customer should have a method that can return whether they live in the USA or not. (Hint this should call a method on the address to find this.)
-public class customer
+public class Customer
 {
     private string _name;
     private Address _address;
 
-    public customer(string name, Address address)
+    public Customer(string name, Address address)
     {
-        name = _name;
-        address = _address;
+        _name = name;
+        _address = address;
     }
 
-    private bool isUSA()
+    public bool IsUSA() // Make this method public
     {
-        return Address.isUSA()
+        return _address.isUSA();
     }
 
-    public void DisplayCustomer()
+    public string GetCustomerInfo()
     {
-        Console.WriteLine({_name}"\n"{_address})
+        return $"{_name}\n{_address.GetFullAddress()}";
     }
-
 }

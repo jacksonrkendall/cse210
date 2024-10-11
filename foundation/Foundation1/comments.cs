@@ -1,10 +1,17 @@
-public class Comments
+public class Comment
 {
     private string _name;
     private string _text;
 
-    public void DisplayComments()
+    public Comment(string name, string text)
     {
-        Console.WriteLine(_name,_text);
+        _name = name;
+        _text = text;
     }
+
+    public void DisplayComment()
+    {
+        Console.WriteLine($"Name: {_name}, Comment: {_text}");
+    }
+
 }

@@ -1,6 +1,3 @@
-// The address should have a method that can return whether it is in the USA or not.
-// The address should have a method to return a string all of its fields together in one string (with newline characters where appropriate)
-
 using System.Security.Authentication;
 
 public class Address{
@@ -11,20 +8,20 @@ public class Address{
 
     public Address(string street, string city, string state, string country)
     {
-        street = _street;
-        city = _city;
-        state = _state;
-        country = _country;
+        _street = street;
+        _city = city;
+        _state = state;
+        _country = country;
     }
 
     public bool isUSA()
     {
-        return true
+        return _country.ToLower() =="usa";
     }
 
-    public string GetAddress()
+    public string GetFullAddress()
     {
-        return Address.cat
+        return $"{_street}\n{_city}, {_state}\n{_country}";
     }
 
 
