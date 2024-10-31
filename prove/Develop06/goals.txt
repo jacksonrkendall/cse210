@@ -1,0 +1,4 @@
+19
+Simple Goal: simple, a simple goal, 1 points
+Eternal Goal: eternal goal, an eternal goal, 2 points each time
+Checklist Goal: checklist goal, a checklist goal, 3 points each time, 5 bonus points on completion
